@@ -73,7 +73,7 @@ else:
         f'<g clip-path="url(#cmdclip)"><text x="{PAD+prompt_px}" y="{y1}" font-size="12.5" fill="{CYAN}">{html.escape(CMD)}</text></g>'
         f'<rect x="{PAD+prompt_px}" y="{y1-10}" width="7" height="12" fill="{CURSOR}">'
         f'<animate attributeName="x" from="{PAD+prompt_px}" to="{PAD+prompt_px+cmd_px:.0f}" begin="{cmd_start}s" dur="{cmd_dur:.2f}s" fill="freeze" calcMode="linear"/>'
-        f'<animate attributeName="opacity" values="1;1;0;0;1" dur="1s" begin="{cmd_done:.2f}s" repeatCount="indefinite"/></rect>'
+        f'<animate attributeName="opacity" values="1;1;0;0;1" dur="1s" begin="{cmd_done:.2f}s" repeatCount="6"/></rect>'
     )
 
 y2 = y1 + 20
@@ -85,21 +85,36 @@ else:
 
 art_top = TITLEBAR_H + BOOT_H
 font_size = CELL_H * 1.05
+
+# Build all rows as ONE group of static <text> (no per-row animation).
+rows_svg = []
 for ry, line in enumerate(lines):
     n = len(line)
-    if n == 0: continue
-    row_y = art_top + ry * CELL_H
-    ty = row_y + CELL_H * 0.82
+    if n == 0:
+        continue
+    ty = art_top + ry * CELL_H + CELL_H * 0.82
     row_w = n * CELL_W
     safe = html.escape(line)
-    text = (f'<text xml:space="preserve" x="{PAD}" y="{ty:.2f}" fill="{INK}" '
-            f'font-size="{font_size:.2f}" textLength="{row_w:.2f}" lengthAdjust="spacing">{safe}</text>')
-    if STATIC:
-        p.append(text); continue
-    d = art_start + ry * STAGGER
-    p.append(f'<clipPath id="r{ry}"><rect x="{PAD}" y="{row_y:.2f}" height="{CELL_H+0.6:.2f}" width="0">'
-             f'<animate attributeName="width" from="0" to="{ART_W:.0f}" begin="{d:.3f}s" dur="{ROW_DUR:.2f}s" fill="freeze"/></rect></clipPath>')
-    p.append(f'<g clip-path="url(#r{ry})">{text}</g>')
+    rows_svg.append(
+        f'<text xml:space="preserve" x="{PAD}" y="{ty:.2f}" fill="{INK}" '
+        f'font-size="{font_size:.2f}" textLength="{row_w:.2f}" lengthAdjust="spacing">{safe}</text>'
+    )
+art_group = "".join(rows_svg)
+
+if STATIC:
+    p.append(art_group)
+else:
+    # single one-shot clip that grows top->bottom, then FREEZES. Because the
+    # whole art is one <g> revealed by one clipPath, only ONE animation runs,
+    # and after it freezes there is nothing repainting during scroll.
+    p.append(f'<clipPath id="artclip"><rect x="{PAD}" y="{art_top:.1f}" width="{ART_W:.0f}" height="0">'
+             f'<animate attributeName="height" from="0" to="{ART_H:.0f}" begin="{art_start:.2f}s" '
+             f'dur="1.5s" fill="freeze" calcMode="linear"/></rect></clipPath>')
+    p.append(f'<g clip-path="url(#artclip)">{art_group}</g>')
+    p.append(f'<rect x="{PAD}" y="{art_top:.1f}" width="{ART_W:.0f}" height="2" fill="{CYAN}" opacity="0">'
+             f'<animate attributeName="y" from="{art_top:.1f}" to="{art_top+ART_H:.1f}" begin="{art_start:.2f}s" dur="1.5s" fill="freeze" calcMode="linear"/>'
+             f'<set attributeName="opacity" to="0.5" begin="{art_start:.2f}s"/>'
+             f'<set attributeName="opacity" to="0" begin="{art_start+1.5:.2f}s"/></rect>')
 
 sl_y = art_top + ART_H + PAD * 0.3
 sy = sl_y + 17
