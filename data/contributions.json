@@ -1,23 +1,13 @@
 {
   "username": "kolavihaan4",
-<<<<<<< HEAD
-  "generated_at": "2026-07-13T04:09:02Z",
-=======
-  "generated_at": "2026-07-13T05:25:19Z",
->>>>>>> afbca5edf41f6ec0f7eb613702929226375d6c70
+  "generated_at": "2026-07-13T05:39:48Z",
   "range": {
     "start": "2025-07-13",
     "end": "2026-07-13"
   },
-<<<<<<< HEAD
-  "total_contributions": 5,
+  "total_contributions": 14,
   "active_days": 3,
-  "avg_per_active_day": 1.7,
-=======
-  "total_contributions": 11,
-  "active_days": 3,
-  "avg_per_active_day": 3.7,
->>>>>>> afbca5edf41f6ec0f7eb613702929226375d6c70
+  "avg_per_active_day": 4.7,
   "current_streak": {
     "length": 2,
     "start": "2026-07-12",
@@ -29,13 +19,8 @@
     "end": "2026-07-13"
   },
   "best_day": {
-<<<<<<< HEAD
-    "date": "2026-07-12",
-    "count": 3
-=======
     "date": "2026-07-13",
-    "count": 7
->>>>>>> afbca5edf41f6ec0f7eb613702929226375d6c70
+    "count": 10
   },
   "monthly": [
     {
@@ -88,11 +73,7 @@
     },
     {
       "month": "2026-07",
-<<<<<<< HEAD
-      "total": 4
-=======
-      "total": 10
->>>>>>> afbca5edf41f6ec0f7eb613702929226375d6c70
+      "total": 13
     }
   ],
   "days": [
@@ -1558,11 +1539,7 @@
     },
     {
       "date": "2026-07-13",
-<<<<<<< HEAD
-      "count": 1
-=======
-      "count": 7
->>>>>>> afbca5edf41f6ec0f7eb613702929226375d6c70
+      "count": 10
     }
   ]
 }
