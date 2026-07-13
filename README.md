@@ -22,24 +22,25 @@ use, not just running them.
 - Build **Python-based AI projects** with **PyTorch**, **Hugging Face**, and **LangChain**
 - Run and integrate **local LLMs** with **Ollama** (great for offline / private setups)
 
-**🧥 Dry Cleaner Garment Analyzer** — a Streamlit app that uses a local
+**🧥 Garment Analyzer (client project)** — a Streamlit app that uses a local
 vision LLM (**Qwen via Ollama**) to analyze photos of clothing, detect
 **stains and damage**, and generate cleaning recommendations. Runs fully
 **offline** — no cloud APIs — and **auto-starts Ollama** and pulls the model
 on launch so it just works.
-*🔬 In progress: training a custom stain- and damage-detection model on a ~40k-image dataset to improve accuracy over the prompt-based approach.*
+*🔬 In progress: training a custom stain- and damage-detection model to improve accuracy over the prompt-based approach.*
 `Python` · `Streamlit` · `Ollama` · `Vision LLM`
+> *Private repo — client work, so the code isn't public. Happy to talk through the approach.*
 
 ---
 
 ## 📌 Featured Projects
 
-- **🧥 Dry Cleaner Garment Analyzer** — local vision-LLM app (Qwen + Ollama) that inspects garment photos for stains/damage and suggests care steps. Fully offline. *Currently training a custom detection model on a ~40k-image dataset.*
+- **🧥 Garment Analyzer** *(client project — private)* — local vision-LLM app (Qwen + Ollama) that inspects garment photos for stains/damage and suggests care steps. Fully offline. *Currently training a custom detection model to improve accuracy.*
 - **🛡️ OSINT Reconnaissance Lab** — reconnaissance and digital-footprint analysis using recon-ng in Docker, as part of hands-on security learning.
 
 ---
 
-## Current Focus
+## 🚀 Current Focus
 
 - Deepening my cybersecurity fundamentals (reconnaissance → analysis → defense)
 - Building small, real projects that combine **AI + security**
