@@ -21,8 +21,8 @@ COLS = max(len(l) for l in lines)
 ROWS = len(lines)
 
 # smaller: tighter cells
-CELL_W = 2.0
-CELL_H = 3.7
+CELL_W = 2.35
+CELL_H = 4.3
 PAD = 16
 TITLEBAR_H = 28
 BOOT_H = 46

@@ -12,12 +12,12 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(HERE, "..", "info-card.svg")
 STATIC = bool(os.environ.get("STATIC"))
 
-W, H = 490, 376
+W, H = 490, 606
 PAD = 20
 TITLEBAR_H = 30
 KEY_X = PAD
 VAL_X = PAD + 96
-LINE_H = 20.5
+LINE_H = 23.5
 
 BG = "#0d1117"
 BG2 = "#111722"
@@ -42,16 +42,22 @@ ROWS = [
     ("kv", "Learning", "OSINT, pentesting, malware analysis"),
     ("kv", "Edu", "Computer Science student"),
     ("gap",),
+    ("sec", "Teaching"),
+    ("kv", "Students", "Young learners (ages 10-13)"),
+    ("kv", "Subjects", "Python, AI/ML, coding fundamentals"),
+    ("gap",),
     ("sec", "Stack"),
+    ("kv", "Langs", "Python, JavaScript, HTML, CSS"),
     ("kv", "AI / ML", "PyTorch, Hugging Face, LangChain"),
     ("kv", "LLMs", "Ollama (local), OpenAI, Claude, Gemini"),
     ("kv", "Security", "OSINT, pen-testing, Linux"),
-    ("kv", "Tooling", "Python, Docker, FastAPI, Git"),
+    ("kv", "Tooling", "Docker, FastAPI, Git"),
     ("gap",),
     ("sec", "Highlights"),
     ("bul", "Teach coding & AI at KKRGENAI"),
     ("bul", "Building an offline vision-LLM app (client)"),
     ("bul", "Training a custom detection model"),
+    ("bul", "Open to AI & security collaborations"),
 ]
 
 
