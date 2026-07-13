@@ -43,7 +43,7 @@ ROWS = [
     ("kv", "Edu", "Computer Science student"),
     ("gap",),
     ("sec", "Teaching"),
-    ("kv", "Students", "Young learners (ages 10-13)"),
+    ("kv", "Students", "Young learners (ages 10-16)"),
     ("kv", "Subjects", "Python, AI/ML, coding fundamentals"),
     ("gap",),
     ("sec", "Stack"),
