@@ -37,13 +37,13 @@ I like understanding how systems work, and how to secure them. Alongside my own
 projects, I teach **coding and AI to young learners (ages 10–13)** as an instructor at
 **KKRGENAI**.
 
-- 🤖 Build with **PyTorch**, **Hugging Face**, **LangChain**, and local LLMs via **Ollama**
-- 🛡️ Learning **cybersecurity** — OSINT, penetration testing, and malware analysis (defensive)
-- 🧑‍🏫 Teach **Python, AI/ML, and coding fundamentals** to kids and teens at KKRGENAI
-- 🚀 Currently training a custom vision model for a client garment-analysis project
-- 🤝 Open to collaborating on **AI** and **security** projects
+-  Build with **PyTorch**, **Hugging Face**, **LangChain**, and local LLMs via **Ollama**
+-  Learning **cybersecurity** — OSINT, penetration testing, and malware analysis (defensive)
+-  Teach **Python, AI/ML, and coding fundamentals** to kids and teens at KKRGENAI
+-  Currently training a custom vision model for a client garment-analysis project
+-  Open to collaborating on **AI** and **security** projects
 
 ## 📌 Featured Projects
 
-- **🧥 Garment Analyzer** *(client project — private)* — local vision-LLM app (Qwen + Ollama) that inspects garment photos for stains/damage and suggests care steps. Fully offline. *Currently training a custom detection model to improve accuracy.*
-- **🛡️ OSINT Reconnaissance Lab** — reconnaissance and digital-footprint analysis using recon-ng in Docker, as part of hands-on security learning.
+- ** Garment Analyzer** *(client project — private)* — local vision-LLM app (Qwen + Ollama) that inspects garment photos for stains/damage and suggests care steps. Fully offline. *Currently training a custom detection model to improve accuracy.*
+- ** OSINT Reconnaissance Lab** — reconnaissance and digital-footprint analysis using recon-ng in Docker, as part of hands-on security learning.
