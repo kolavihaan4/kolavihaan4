@@ -34,7 +34,7 @@
 
 Computer Science student and builder focused on **applied AI** and **cybersecurity** —
 I like understanding how systems work, and how to secure them. Alongside my own
-projects, I teach **coding and AI to young learners (ages 10–13)** as an instructor at
+projects, I teach **coding and AI to young learners (ages 10–16)** as an instructor at
 **KKRGENAI**.
 
 -  Build with **PyTorch**, **Hugging Face**, **LangChain**, and local LLMs via **Ollama**
