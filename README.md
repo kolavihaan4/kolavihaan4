@@ -30,20 +30,58 @@
 
 ---
 
-## 👋 About Me
+## Tech Stack
 
-Computer Science student and builder focused on **applied AI** and **cybersecurity** —
-I like understanding how systems work, and how to secure them. Alongside my own
-projects, I teach **coding and AI to young learners (ages 10–16)** as an instructor at
-**KKRGENAI**.
+**Languages** — Python, JavaScript, HTML, CSS, Bash
 
--  Build with **PyTorch**, **Hugging Face**, **LangChain**, and local LLMs via **Ollama**
--  Learning **cybersecurity** — OSINT, penetration testing, and malware analysis (defensive)
--  Teach **Python, AI/ML, and coding fundamentals** to kids and teens at KKRGENAI
--  Currently training a custom vision model for a client garment-analysis project
--  Open to collaborating on **AI** and **security** projects
+**Generative AI & LLM** — OpenAI, Anthropic Claude, Google Gemini, Hugging Face, Transformers, LangChain
 
-## 📌 Featured Projects
+**Agentic Frameworks** — LangGraph
 
-- ** Garment Analyzer** *(client project — private)* — local vision-LLM app (Qwen + Ollama) that inspects garment photos for stains/damage and suggests care steps. Fully offline. *Currently training a custom detection model to improve accuracy.*
-- ** OSINT Reconnaissance Lab** — reconnaissance and digital-footprint analysis using recon-ng in Docker, as part of hands-on security learning.
+**ML / Deep Learning** — PyTorch, TensorFlow, scikit-learn
+
+**Serving & APIs** — FastAPI, Flask, gRPC
+
+**Tooling** — Docker, Git, Linux
+
+**Cloud** — AWS, Azure, Google Cloud
+
+## I Teach
+
+I teach these as an instructor at KKRGENAI:
+
+**AI & Programming** — Python, AI/ML fundamentals, and the GenAI tools (OpenAI, Claude, Gemini, Hugging Face, LangChain)
+
+**Cloud** — AWS, Azure, and Google Cloud
+
+## Currently Learning
+
+**Databases** — PostgreSQL, MongoDB, Redis
+
+**Infra & Orchestration** — Kubernetes, Kafka, Spark, Databricks, BigQuery — building toward distributed, production-scale systems.
+
+## About Me
+
+I'm a Computer Science student who spends most of my time on two things: building with AI and learning security. I like getting under the hood of how systems actually work — and, on the security side, how they break and how to defend them. Outside my own projects, I teach coding and AI to kids and teens at **KKRGENAI**, which has honestly taught me as much about explaining hard ideas simply as it's taught them to code.
+
+### What I work on
+
+On the AI side I build with **PyTorch** and **Hugging Face**, and I lean heavily on **LangChain** and local models through **Ollama** — I like the idea of AI that runs offline and doesn't depend on a cloud API. My current project is a vision-based tool for a client that analyzes garment photos for stains and damage; right now I'm training a custom detection model to make it more accurate than the prompt-based version I started with.
+
+### What I'm learning
+
+Cybersecurity is where I'm growing fastest. I'm working through **OSINT** and reconnaissance, the basics of **penetration testing**, and **malware analysis** from a defensive angle — understanding how the bad stuff works so I know what I'm defending against. I set up recon-ng in Docker to get hands-on with digital-footprint analysis.
+
+### Teaching
+
+At KKRGENAI I teach **Python, intro AI/ML, and coding fundamentals** to young learners (ages 10–16). Breaking real engineering down for a 10-year-old is a good forcing function — if you can't explain it simply, you don't really understand it yet.
+
+🤝 Always up for collaborating on AI or security projects.
+
+## Featured Projects
+
+**Garment Analyzer** *(client project — private)*
+A local vision-LLM app (Qwen + Ollama) that inspects garment photos for stains and damage and suggests care steps. Runs fully offline, no cloud APIs. I'm currently training a custom detection model to push its accuracy past the prompt-based version.
+
+**OSINT Reconnaissance Lab**
+Reconnaissance and digital-footprint analysis with recon-ng in Docker — my hands-on sandbox for learning the security side.
