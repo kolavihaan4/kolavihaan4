@@ -82,6 +82,8 @@ I'm a Computer Science student who spends most of my time building with AI. I li
 
 On the AI side I build with **PyTorch** and **Hugging Face**, and I lean heavily on **LangChain** and local models through **Ollama** — I like the idea of AI that runs offline and doesn't depend on a cloud API. My current project is a vision-based tool for a client that analyzes garment photos for stains and damage; right now I'm training a custom detection model to make it more accurate than the prompt-based version I started with.
 
+Next up are the three systems at the top of this page — an AI gateway, a knowledge assistant, and a real-time ML platform. I'm building them to learn how production AI is designed end to end: how the parts connect, where they fail, and what they cost to run.
+
 ### Security background
 
 Security is my second skill set, and it shapes how I build AI. I've worked through **OSINT** and reconnaissance, the basics of **penetration testing**, and **malware analysis** from a defensive angle — understanding how the bad stuff works so I know what I'm defending against. I set up recon-ng in Docker to get hands-on with digital-footprint analysis.
@@ -89,6 +91,10 @@ Security is my second skill set, and it shapes how I build AI. I've worked throu
 ### Teaching
 
 At KKRGENAI I teach **Python, intro AI/ML, and coding fundamentals** to young learners (ages 10–16). Breaking real engineering down for a 10-year-old is a good forcing function — if you can't explain it simply, you don't really understand it yet.
+
+### Where I'm headed
+
+Long term I want to work in AI research engineering — building and studying the models themselves, not only the systems around them. So alongside the projects, I'm working on the math and on building models from scratch.
 
 🤝 Always up for collaborating on AI projects.
 
