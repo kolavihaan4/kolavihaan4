@@ -9,9 +9,9 @@
 
 ## Vihaan Kola
 
-**AI Builder · Cybersecurity Student · Instructor @ KKRGENAI**
+**AI Builder · Instructor @ KKRGENAI**
 
-*Computer Science student building at the intersection of AI and cybersecurity —*
+*Computer Science student building AI systems end to end, with a security background —*
 *and teaching the next generation of coders at KKRGENAI.*
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
@@ -76,21 +76,21 @@ Reconnaissance and digital-footprint analysis with recon-ng in Docker — my han
 
 ## About Me
 
-I'm a Computer Science student who spends most of my time on two things: building with AI and learning security. I like getting under the hood of how systems actually work — and, on the security side, how they break and how to defend them. Outside my own projects, I teach coding and AI to kids and teens at **KKRGENAI**, which has honestly taught me as much about explaining hard ideas simply as it's taught them to code.
+I'm a Computer Science student who spends most of my time building with AI. I like getting under the hood of how systems actually work — and, from my security background, how they break and how to defend them. Outside my own projects, I teach coding and AI to kids and teens at **KKRGENAI**, which has honestly taught me as much about explaining hard ideas simply as it's taught them to code.
 
 ### What I work on
 
 On the AI side I build with **PyTorch** and **Hugging Face**, and I lean heavily on **LangChain** and local models through **Ollama** — I like the idea of AI that runs offline and doesn't depend on a cloud API. My current project is a vision-based tool for a client that analyzes garment photos for stains and damage; right now I'm training a custom detection model to make it more accurate than the prompt-based version I started with.
 
-### What I'm learning
+### Security background
 
-Cybersecurity is where I'm growing fastest. I'm working through **OSINT** and reconnaissance, the basics of **penetration testing**, and **malware analysis** from a defensive angle — understanding how the bad stuff works so I know what I'm defending against. I set up recon-ng in Docker to get hands-on with digital-footprint analysis.
+Security is my second skill set, and it shapes how I build AI. I've worked through **OSINT** and reconnaissance, the basics of **penetration testing**, and **malware analysis** from a defensive angle — understanding how the bad stuff works so I know what I'm defending against. I set up recon-ng in Docker to get hands-on with digital-footprint analysis.
 
 ### Teaching
 
 At KKRGENAI I teach **Python, intro AI/ML, and coding fundamentals** to young learners (ages 10–16). Breaking real engineering down for a 10-year-old is a good forcing function — if you can't explain it simply, you don't really understand it yet.
 
-🤝 Always up for collaborating on AI or security projects.
+🤝 Always up for collaborating on AI projects.
 
 ## Tech Stack
 
