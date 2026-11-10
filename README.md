@@ -32,21 +32,26 @@
 
 ## Project Plans
 
-A planned project focused on streaming data, model serving, and monitoring.
+Three planned projects exploring training data, efficient inference, and production machine learning. Each will start with a small baseline and measured comparisons.
 
-| Project | What it does | Proves | Status |
+| Project | What it does | Focus | Status |
 |---|---|---|---|
+| **Data-Efficient Vision Lab** | Investigate how image selection affects the number of human labels needed to train an accurate classifier. Compare random selection, uncertainty-based selection, and possible improvements on public datasets. | Active learning, reproducible experiments, accuracy versus labeling effort | Planned |
+| **Offline Vision Optimizer** | Adapt an image-classification model for offline CPU inference. Compare its accuracy, model size, memory use, and inference time against the original model on the same hardware. | Model compression, CPU inference, accuracy-speed-memory tradeoffs | Planned |
 | **Real-Time ML Platform** | Scores a live event stream for attacks in milliseconds, watches for model drift, and retrains itself. | Streaming, model serving, monitoring, retraining | Planned |
 
 **Planned stack**
 
+- **Data-Efficient Vision Lab** — Python, PyTorch, scikit-learn, Matplotlib
+- **Offline Vision Optimizer** — Python, PyTorch, ONNX Runtime, Docker
 - **Real-Time ML Platform** — Kafka, Spark, PyTorch, scikit-learn, TensorFlow, BigQuery, AWS
 
 **What every repo will ship with**
 
 - An architecture diagram
 - Decision records — what I picked, what I rejected, and why
-- Measured numbers — throughput, latency, cost, and what happens when a component is killed on purpose
+- Reproducible experiments and clear baseline comparisons
+- Measured results suited to the project: accuracy, labeling effort, model size, memory use, latency, and, where relevant, throughput, cost, and failure tests
 
 Repos will be linked here as each one goes public.
 
@@ -66,7 +71,7 @@ I'm a Computer Science student who spends most of my time building with AI. I li
 
 On the AI side I build with **PyTorch** and **Hugging Face**, and I lean heavily on **LangChain** and local models through **Ollama** — I like the idea of AI that runs offline and doesn't depend on a cloud API. My current project is a vision-based tool for a client that analyzes garment photos for stains and damage; right now I'm training a custom detection model to make it more accurate than the prompt-based version I started with.
 
-My planned Real-Time ML Platform will help me learn how production machine learning is designed end to end: how models handle live data, how their performance changes, and what they cost to run.
+My planned projects explore three parts of machine learning: selecting useful training images in the Data-Efficient Vision Lab, making models smaller and faster in the Offline Vision Optimizer, and serving and monitoring models on live data in the Real-Time ML Platform.
 
 ### Security background
 
