@@ -30,32 +30,16 @@
 
 ---
 
-## Building Now
+## Project Plans
 
-Three systems, designed to plug into each other — a small AI backend, built end to end.
+A planned project focused on streaming data, model serving, and monitoring.
 
 | Project | What it does | Proves | Status |
 |---|---|---|---|
-| **AI Gateway** | One front door for every AI request. Routes each call to OpenAI, Claude, Gemini, or a local Ollama model by cost, speed, and difficulty, with caching, rate limits, and automatic failover. | Routing, caching, failover, cost tracking | Design |
-| **Knowledge Assistant** | Ask questions over a set of documents. Agents search, read, check each other's answers, and cite sources — and block instructions hidden inside documents. | Retrieval design, agent workflows, automated evals, guardrails | Planned |
 | **Real-Time ML Platform** | Scores a live event stream for attacks in milliseconds, watches for model drift, and retrains itself. | Streaming, model serving, monitoring, retraining | Planned |
 
-```mermaid
-flowchart LR
-    U[Apps and users] --> KA[Knowledge Assistant]
-    KA -->|every model call| GW[AI Gateway]
-    GW --> O[OpenAI]
-    GW --> C[Claude]
-    GW --> G[Gemini]
-    GW --> L[Ollama - local]
-    GW -->|request logs| RT[Real-Time ML Platform]
-    RT -->|alerts and drift reports| D[Dashboard]
-```
+**Planned stack**
 
-**Planned stack per project**
-
-- **AI Gateway** — FastAPI, gRPC, Redis, PostgreSQL, Docker, Kubernetes, Google Cloud
-- **Knowledge Assistant** — LangGraph, LangChain, Hugging Face Transformers, MongoDB, Flask, JavaScript, Azure
 - **Real-Time ML Platform** — Kafka, Spark, PyTorch, scikit-learn, TensorFlow, BigQuery, AWS
 
 **What every repo will ship with**
@@ -82,7 +66,7 @@ I'm a Computer Science student who spends most of my time building with AI. I li
 
 On the AI side I build with **PyTorch** and **Hugging Face**, and I lean heavily on **LangChain** and local models through **Ollama** — I like the idea of AI that runs offline and doesn't depend on a cloud API. My current project is a vision-based tool for a client that analyzes garment photos for stains and damage; right now I'm training a custom detection model to make it more accurate than the prompt-based version I started with.
 
-Next up are the three systems at the top of this page — an AI gateway, a knowledge assistant, and a real-time ML platform. I'm building them to learn how production AI is designed end to end: how the parts connect, where they fail, and what they cost to run.
+My planned Real-Time ML Platform will help me learn how production machine learning is designed end to end: how models handle live data, how their performance changes, and what they cost to run.
 
 ### Security background
 
