@@ -38,7 +38,7 @@ ACCENT = "#22d3ee"
 ROWS = [
     ("host",),
     ("kv", "Now", "AI Instructor @ KKRGENAI"),
-    ("kv", "Focus", "Applied AI + Cybersecurity"),
+    ("kv", "Focus", "Applied AI systems"),
     ("kv", "Learning", "OSINT, pentesting, malware analysis"),
     ("kv", "Edu", "Computer Science student"),
     ("gap",),
@@ -57,7 +57,7 @@ ROWS = [
     ("bul", "Teach coding & AI at KKRGENAI"),
     ("bul", "Building an offline vision-LLM app (client)"),
     ("bul", "Training a custom detection model"),
-    ("bul", "Open to AI & security collaborations"),
+    ("bul", "Open to AI collaborations"),
 ]
 
 
